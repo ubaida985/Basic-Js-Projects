@@ -1,0 +1,76 @@
+:root{
+    --fontInter : 'Inter', sans-serif;
+}
+
+/* CSS PRESETS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fontInter{
+    font-family: 'Inter', sans-serif;
+}
+
+.outerContainer{
+    height: 100vh;
+    width: 100%;
+    background: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem ;
+}
+
+.container p{
+    color: white;
+    font-family: var(--fontInter);
+    text-shadow: 8px -1px 3px black;
+}
+
+.container .timer{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.container .labels{
+    font-size: 1.5rem;
+
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        margin: 0 1rem;
+    }
+    .container .timer{
+        font-size: 3rem;
+    }
+    .container .labels{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .container{
+        margin: 0 0.5rem;
+    }
+    .container .timer{
+        font-size: 2rem;
+    }
+    .container .labels{
+        font-size: 0.8rem;
+    }
+}
