@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CUSTOM JS -->
+    <script src="./script.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div id="quiz" class="quizContainer">
+            <div class="quiz">
+                <h1 id="question"> Question </h1>
+                <ul>
+                    <li>
+                        <input class="optionInput" type="radio" name="option" id="optionA">
+                        <label class="option" for="optionA">optionA</label>
+                    </li>
+                    <li>
+                        <input class="optionInput" type="radio" name="option" id="optionB">
+                        <label class="option" for="optionB">optionA</label>
+                    </li>
+                    <li>
+                        <input class="optionInput" type="radio" name="option" id="optionC">
+                        <label class="option" for="optionC">optionA</label>
+                    </li>
+                    <li>
+                        <input class="optionInput" type="radio" name="option" id="optionD">
+                        <label class="option" for="optionD">optionA</label>
+                    </li>
+                </ul>
+            </div>
+
+            <Button onclick="submitQuestion()"> Submit </Button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

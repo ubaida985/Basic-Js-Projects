@@ -1,0 +1,83 @@
+:root{
+    --fontInter : 'Inter', sans-serif;
+}
+
+/* CSS PRESETS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fontInter{
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background-color: #bdd8fe;
+    background-image: linear-gradient(315deg, #bdd8fe 0%, #e186b4 74%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizContainer{
+    width: 400px;
+    background-color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz{
+    padding: 1rem 2rem ;
+}
+.quiz h1{
+    margin-bottom: 1rem;
+}
+.quiz ul{
+    list-style-type: none;
+}
+.quiz li{
+    margin: 0.5rem 0;
+}
+.quiz input{
+    cursor: pointer;
+}
+.quiz label{
+    cursor: pointer;
+    pointer-events: all;
+
+}
+
+.quizContainer button{
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    transition: 0.2s;
+    
+    background-color: #c5c5c5;
+    color: #3d3d3d;
+    font-size: 1rem;
+}
+button:hover{
+    color: #5a5a5a;
+    background-color: #AAAAAA;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:450px) {
+    .quizContainer{
+        width: 300px;
+    }
+    .quiz{
+        padding: 1rem;
+    }
+}
